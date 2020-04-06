@@ -1,0 +1,25 @@
+GET http://localhost:3000/studentdata
+
+###
+GET http://localhost:3000/studentdata/5e8ae9e7540a4147acc9c507
+
+###
+POST http://localhost:3000/studentdata/
+Content-Type: application/json
+
+{
+    "name": "Ajay",
+    "age": 15,
+    "std": 10
+}
+
+###
+DELETE http://localhost:3000/studentdata/5e8ae9e7540a4147acc9c507
+
+###
+PATCH http://localhost:3000/studentdata/5e8ae9e8540a4147acc9c508
+Content-Type: application/json
+
+{
+    "name": "Vijay"
+}
